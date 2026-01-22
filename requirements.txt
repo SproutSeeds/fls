@@ -1,0 +1,8 @@
+# Optional-but-recommended dependencies for full document consumption.
+#
+# FLS basic scanning runs without third-party packages, but local RAG indexing
+# works best with these installed for robust PDF text extraction and layout-aware parsing.
+
+pypdf>=6.0.0
+pdfplumber>=0.11.0
+

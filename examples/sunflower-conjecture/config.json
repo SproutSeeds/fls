@@ -1,0 +1,76 @@
+{
+  "primary_keywords": [
+    "sunflower",
+    "sunflowers",
+    "sunflower-free",
+    "sunflower free",
+    "sunflower lemma",
+    "Δ-system",
+    "delta-system",
+    "delta system"
+  ],
+
+  "secondary_keywords": [
+    "Erdos-Rado",
+    "Erdos-Szemeredi",
+    "spread lemma",
+    "m(n,3)",
+    "M(n,3)",
+    "polynomial method",
+    "slice rank",
+    "cap set"
+  ],
+
+  "min_primary_hits": 1,
+
+  "arxiv_categories": [
+    "math.CO",
+    "math.PR",
+    "cs.DM",
+    "cs.CC"
+  ],
+
+  "sources": {
+    "arxiv": true,
+    "semantic_scholar": true,
+    "oeis": true
+  },
+
+  "oeis_sequences": [
+    [1, 3, 5, 8, 12, 19, 29, 45, 68],
+    [2, 4, 6, 9, 13, 20, 30, 46, 69]
+  ],
+
+  "research_context": "We are attacking Erdős Problem #857 (Weak Sunflower Conjecture). Our focus: improving bounds on m(n,k) where m(n,k) = minimum m such that any m subsets of {1,...,n} contain a k-sunflower. Our key insight: the sunflower constraint is LOCAL (per-coordinate). We care about: weak formulation (subsets of [n]), small-n exact values, polynomial vs exponential growth, and the gap between empirical growth (~1.55^n) and the Naslund-Sawin bound (~1.89^n).",
+
+  "unpaywall_email": "",
+  "rag_index_db": "rag/rag_index.sqlite",
+  "rag_chunk_chars": 1800,
+  "rag_chunk_overlap_chars": 200,
+  "rag_ocr_enabled": false,
+  "rag_ocr_languages": "eng",
+  "rag_ocr_dpi": 200,
+
+  "max_results_per_source": 50,
+  "max_new_papers_per_run": 10,
+
+  "download_dir": "papers",
+  "state_file": "fls_state.json",
+  "manifest_file": "papers/papers_manifest.json",
+  "world_model_file": "LITERATURE_WORLD_MODEL.md",
+  "notes_file": "literature_notes.json",
+
+  "auto_world_model": true,
+  "open_access_only": true,
+  "lookback_days_default": 14,
+  "freshness_hours": 6,
+
+  "arxiv_delay_seconds": 3,
+  "s2_delay_seconds": 1.0,
+  "oeis_delay_seconds": 1.5,
+  "unpaywall_delay_seconds": 1.0,
+
+  "max_queue_size": 200,
+  "recheck_irrelevant_on_keyword_change": true,
+  "irrelevant_recheck_days": 180
+}

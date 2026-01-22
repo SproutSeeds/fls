@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+.DS_Store
+
+# Local env files (keep secrets/personal data out of git)
+.env
+.env.local
+.env.*
+!.env.example
+
+# Local runner state
+.fls_last_config
+
+# Local RAG index (generated)
+rag/
+
+# Generated outputs (when running in this repo)
+papers/
+fls_config.json
+fls_state.json
+literature_notes.json
+LITERATURE_WORLD_MODEL.md
+LITERATURE_SCAN_REPORT.md

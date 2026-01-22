@@ -1,0 +1,83 @@
+{
+  "_comment": "FLS Configuration Template - Copy and customize for your research domain",
+
+  "primary_keywords": [
+    "your-main-keyword",
+    "another-required-term"
+  ],
+  "_primary_keywords_help": "Papers MUST contain at least min_primary_hits of these",
+
+  "secondary_keywords": [
+    "related-term",
+    "nice-to-have"
+  ],
+  "_secondary_keywords_help": "Optional terms that increase relevance scoring",
+
+  "min_primary_hits": 1,
+  "_min_primary_hits_help": "Minimum primary keywords a paper must match",
+
+  "arxiv_categories": [
+    "math.CO",
+    "cs.DM"
+  ],
+  "_arxiv_categories_help": "arXiv categories to search. Common: math.CO, math.PR, cs.DM, cs.CC, math.NT, physics.*",
+
+  "sources": {
+    "arxiv": true,
+    "semantic_scholar": true,
+    "oeis": false
+  },
+  "_sources_help": "Enable/disable data sources",
+
+  "oeis_sequences": [],
+  "_oeis_sequences_help": "Integer sequences to search in OEIS, e.g., [[1,3,5,8], [2,4,6,9]]",
+
+  "research_context": "Describe your research focus here. This is injected into AI prompts for better relevance assessment.",
+
+  "unpaywall_email": "",
+  "_unpaywall_email_help": "Optional. If set (or via FLS_UNPAYWALL_EMAIL env var), FLS can use Unpaywall for OA PDF discovery via DOI and for title search utilities.",
+
+  "rag_index_db": "rag/rag_index.sqlite",
+  "_rag_index_db_help": "Local SQLite index for offline RAG queries over your downloaded papers + notes.",
+  "rag_chunk_chars": 1800,
+  "rag_chunk_overlap_chars": 200,
+  "_rag_chunking_help": "Chunk sizes for local indexing (character-based, with overlap).",
+  "rag_ocr_enabled": false,
+  "rag_ocr_languages": "eng",
+  "rag_ocr_dpi": 200,
+  "_rag_ocr_help": "Optional. If enabled and tesseract+pdftoppm are installed, FLS can OCR image-only PDFs for indexing.",
+
+  "max_results_per_source": 50,
+  "max_new_papers_per_run": 10,
+  "_max_help": "Limits to prevent overwhelming results",
+
+  "download_dir": "papers",
+  "state_file": "fls_state.json",
+  "manifest_file": "papers/papers_manifest.json",
+  "world_model_file": "LITERATURE_WORLD_MODEL.md",
+  "notes_file": "literature_notes.json",
+  "_paths_help": "Output file paths (relative to working directory)",
+
+  "auto_world_model": true,
+  "_auto_world_model_help": "Automatically add papers to world model on delta scan",
+
+  "open_access_only": true,
+  "_open_access_only_help": "Only download papers with open-access PDFs",
+
+  "lookback_days_default": 14,
+  "_lookback_help": "How far back to look on delta scans",
+
+  "freshness_hours": 6,
+  "_freshness_help": "Recommended scan frequency for agents",
+
+  "arxiv_delay_seconds": 3,
+  "s2_delay_seconds": 1.0,
+  "oeis_delay_seconds": 1.5,
+  "unpaywall_delay_seconds": 1.0,
+  "_delay_help": "Rate limiting delays between API calls",
+
+  "max_queue_size": 200,
+  "recheck_irrelevant_on_keyword_change": true,
+  "irrelevant_recheck_days": 180,
+  "_advanced_help": "Advanced options for managing paper queue"
+}
