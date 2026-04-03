@@ -1,5 +1,7 @@
 # FLS — Frontier Literature Scanner
 
+Maintained by SproutSeeds. Research stewardship: Fractal Research Group ([frg.earth](https://frg.earth)).
+
 **Automated literature monitoring for frontier research.**
 
 FLS is a **project-agnostic pipeline** for staying current with research literature. It provides:
